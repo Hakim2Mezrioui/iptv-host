@@ -1,0 +1,16 @@
+.subscription {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-block: 10em;
+}
+
+
+
+@media (max-width: 1100px) {
+    .subscription {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

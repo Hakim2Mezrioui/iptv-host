@@ -1,0 +1,15 @@
+.advantages {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-block: 3em;
+}
+
+.advantages div {
+    text-align: center;
+}
+
+.advantages h6 {
+    font-weight: bold;
+    margin-top: 2em;
+}

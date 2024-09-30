@@ -1,0 +1,27 @@
+.message {
+    text-align: justify;
+    border-radius: .3em;
+    padding: .5em;    
+    color: white;
+    margin-block: .5em;
+}
+
+.message p {
+    padding-left: 1em;
+}
+
+.btn {
+    border-radius: .3em;
+    padding: .5em 1.5em;
+    outline: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 0em;
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: white;
+}

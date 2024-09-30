@@ -1,0 +1,225 @@
+.contact {
+    background-image: url("../shared/contact/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 35vh;
+}
+
+.feedback {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5em;
+    padding: 10em 5em;
+}
+
+.feedback p {
+    /* width: 35em; */
+    text-align: justify;
+    /* font-family: Roboto ; */
+}
+
+.feedbackForm {
+    padding: 2em;
+    background-color: rgb(76, 109, 140);
+    border-radius: 3em 0 3em 0;
+    transition: border-radius .3s ease;
+    color: white;
+    box-shadow: 0 0 10px rgb(76, 109, 140);
+}
+
+.feedbackForm:hover {
+    border-radius: 0 3em 0 3em;
+}
+
+.form-group {
+    margin-block: 1em;
+    display: block;
+}
+
+.form-group input, .form-group textarea{
+    display: block;
+    width: 100%;
+    padding: .5em 1em;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+.btnSend {
+    background-color: transparent;
+    color: white;
+    /* border-radius: 1em; */
+    padding: .5em 1em;
+    position: relative;
+    inset: 1;
+    z-index: 2;
+    display: block;
+    border: 1px solid white;
+    transition: all .2s;
+}
+
+.btnSend:hover {
+    color: white;
+    border: 1px solid rgb(36, 47, 59);
+}
+
+.btnSend::before{
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    top: 50%;
+    left: 50%;
+    /* height: 100%;
+    width: 100%; */
+    transform: translate(-50%, -50%);
+    background-color: rgb(36, 47, 59);
+    /* inset: 0; */
+    clip-path: circle(0% at 50% 50%);
+    transition: .5s ease;
+    z-index: -1;
+    color: white;
+    transition: all .6s ease;
+    width: 0%;
+    height: 100%;
+}
+
+.btnSend:hover::before {
+    clip-path: circle(100% at 50% 50%);
+    width: 100%;
+    opacity: 1;
+}
+
+/* .btnSend:hover {
+    background-color: green;
+    transition: all .5 ease;
+} */
+
+.fa-icon {
+    border: 1px solid rgb(76, 109, 140);
+    padding: .5em;
+    border-radius: 50%;
+    color: rgb(76, 109, 140);
+    transition: all .3s ease;
+    font-size: 2em;
+}
+
+.fa-icon:hover {
+    background-color: rgb(76, 109, 140);
+    color: white;
+}
+
+.our-info {
+    min-width: 30em;
+    width: 30em;
+}
+
+.list-contact {
+    list-style-type: none;
+    margin-top: 3em;
+    padding: 0;
+}
+
+.list-contact li p{
+    text-align: right;
+}
+
+.watching {
+    height: 5em;
+    position: relative;
+}
+
+.watching img {
+    object-position: center;
+    object-fit: cover;
+    height: 300px;
+    margin-block: 2em;
+    filter: blur(5px);
+}
+
+.watching button {
+    position: absolute;
+    top: 10em;
+    left: calc(50% - var(--width)/2);
+    --width: 20em;
+    width: var(--width);
+    
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.watching button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.watching button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@media(max-width: 1100px) {
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

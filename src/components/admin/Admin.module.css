@@ -1,0 +1,102 @@
+.backGround {
+    /* background-color: rgb(30, 30, 30); */
+    background-color: rgb(82, 109, 137);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 81.5%, 0% 43.75%);
+}
+
+.form-auth {
+    background: white;
+    width: fit-content;
+    position: relative;
+    padding: 1em 2em;
+    margin: auto;
+    margin-top: 8em;
+}
+
+.form-auth span {
+    background-color: rgb(82, 109, 137);
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 80%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-block: 1em;
+    border-radius: .5em;
+    width: 22em;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    color: rgb(180, 180, 180);
+    top: 10px;
+    left: 8px;
+    font-size: 16px;
+    transition: all .1s ease;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(82, 109, 137);
+    padding: 1.6em 1.5em;
+    outline: 0;
+    font-size: 10px;
+    color: rgb(82, 109, 137);
+}
+
+.form-group input:focus + label {
+    font-size: 10px;
+    top: 5px;
+    color: black;
+}
+
+.form-group input + label.notEmpty {
+    top: 5px;
+    color: black;
+    font-size: 10px;
+}
+
+.form-buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.form-buttons button {
+    padding: .2em 1em;
+}
+
+.form-buttons button:first-child {
+    background-color: transparent;
+    border: 1px solid rgb(82, 109, 137);
+    color: rgb(82, 109, 137);
+    transition: all .1s ease;
+}
+
+.form-buttons button:last-child {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+}
+
+.form-buttons button:first-child:hover {
+    background-color: rgb(82, 109, 137);
+    color: white;
+}
+
+.form-buttons button:last-child:hover {
+    background-color: rgba(240, 128, 128, 0.822);
+}

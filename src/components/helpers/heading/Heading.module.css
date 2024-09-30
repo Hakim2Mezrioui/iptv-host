@@ -1,0 +1,20 @@
+.heading {
+    text-align: center;
+    font-family: roboto;
+    color: white;
+    position: relative;
+    border-bottom: 2px solid rgb(78, 109, 139);
+    width: 100%;
+    margin-block: 2em;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.heading h3 {
+    background-color: rgb(78, 109, 139);
+    padding: 0em 2em 0em 1em;
+    margin: 0;
+    width: fit-content;
+    position: relative;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+}

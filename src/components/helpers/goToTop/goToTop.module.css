@@ -1,0 +1,11 @@
+.btn {
+    background-color: rgb(93, 122, 152);
+    padding: 1em 1.3em;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    right: 1em;
+    bottom: 2em;
+    border: none;
+    z-index: 10;
+}

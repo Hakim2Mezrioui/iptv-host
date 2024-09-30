@@ -1,0 +1,7 @@
+.movies {
+    padding-block: 5em;;
+    background-color: rgb(82, 109, 137);
+    margin-block: 7em;
+    /* clip-path: polygon(50% 0%, 100% 20%, 99% 80%, 50% 100%, 50% 100%, 0 80%, 0 20%); */
+    clip-path: polygon(50% 0%, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0 70%, 0 30%);
+}

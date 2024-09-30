@@ -1,0 +1,77 @@
+.card-subscription {
+    width: 18em;
+    background-color: white;
+    padding: .5em;
+    box-shadow: 0 0 10px;
+    transition: transform .2s ease;
+}
+
+.card-subscription:hover {
+    transform: scale(1.01);
+}
+
+.card-subscription:hover .card-head {
+    border-radius: 0;
+}
+
+.card-head {
+    background-color: rgb(78, 109, 139);    /* color: black; */
+    height: 20em;
+    border-radius: 0 0 19em 0;
+    transition: .2s ease;
+}
+
+.card-body {
+    padding-block: 1em;
+}
+
+.date-price {
+    padding-top: 7em;
+    text-align: center;
+    color: white;
+}
+
+.date-price h1 {
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.btnGetNow {
+    border: 1px solid rgb(78, 109, 139);
+    color: rgb(78, 109, 139);
+    padding: .5em;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s ease;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(78, 109, 139);
+}
+
+.btnGetNow:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btnGetNow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(78, 109, 139);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: white;
+    height: 100%;
+    width: 0%;
+    transition: all .5s ease;
+}
+
+.btnGetNow:hover::after {
+    width: 100%;
+    opacity: 1;
+}

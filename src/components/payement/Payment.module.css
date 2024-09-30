@@ -1,0 +1,77 @@
+.paymentForm {
+    width: 25em;
+    background-color: white;
+    box-shadow: 0 0 5px;
+    border-radius: .5em;
+    margin: auto;
+    margin-top: 10em;
+    padding: 2em;
+}
+
+
+.submitButton {
+    padding: .3em 1em;
+    background-color: transparent;
+    border: 1px solid rgb(83, 109, 136);
+    position: relative;
+    color: rgb(83, 109, 136);
+    display: block;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.submitButton:hover {
+    color: white;
+}
+
+.submitButton::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: rgb(83, 109, 136);
+    transform: translate(-50% -50%);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.submitButton:hover::after {
+    background: rgb(83, 109, 136);
+    width: 100%;
+    opacity: 1;
+}
+
+.circle {
+    background-color: rgb(83, 109, 136);
+    width: 20em;
+    height: 35em;
+    z-index: -1;
+    position: absolute;
+    left: calc(50%);
+    top: 6em;
+    border-radius: 0 50% 50% 0;
+}
+
+.goBack {
+    padding: .5em 2em;
+    background: transparent;
+    border: 1px solid rgb(83, 109, 136);
+    color: rgb(83, 109, 136);
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    transition: all .5s ease;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.goBack:hover {
+    border-radius: 50% 0 0 50%;
+    gap: 1em;
+    background-color: rgb(83, 109, 136);
+    color: white;
+}

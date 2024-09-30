@@ -1,0 +1,50 @@
+.description {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.description span {
+    color: rgb(80, 109, 138);
+    font-weight: bold;
+    font-family: muli, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.img {
+    animation: fadeImages 3s ease;
+    height: 500px;
+    border: 1em solid rgb(80, 109, 138);
+    border-radius: .5em;
+}
+
+@keyframes fadeImages {
+    0%{
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    /* 100% {
+        opacity: 0;
+    } */
+}
+
+@media (max-width: 1200px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .description p {
+        width: 50em;
+        text-align: justify;
+    }
+}
+
+.center {
+    width: 400px;
+    height: 700px;
+    padding: 1em;
+}
