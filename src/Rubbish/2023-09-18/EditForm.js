@@ -1,12 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import classes from "./EditForm.module.css";
 
-let EditForm = (props) => {
-
-    let nameVal = useRef();
-    let durationVal = useRef();
-    let priceVal = useRef();
-
+let EditForm = () => {
     return (
         <React.Fragment>
             <div className={classes.back}></div>

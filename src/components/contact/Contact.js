@@ -1,11 +1,7 @@
-import React, { useCallback, useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import classes from "./Contact.module.css";
 import { faPhone, faMessage, faFileLines} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Slider from "react-slick";
-import watch1 from "../shared/contact/watch1.jpg";
-import watch2 from "../shared/contact/watch2.jpg";
-import watch3 from "../shared/contact/watch3.jpg";
 import IptvContext from "../context/Iptv";
 
 const Contact = () => {
@@ -14,14 +10,14 @@ const Contact = () => {
         ctx.checkPaymentPage(false);
     }, []);
 
-    const setting = {
-        dots: true,
-        infinite: true,
-        speed: 100,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-    }
+    // const setting = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 100,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    // }
 
     return (
         <React.Fragment>

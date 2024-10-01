@@ -12,7 +12,6 @@ import BestMovies from "../bestMovies/BestMovies";
 import Testimonials from "../testimonials/Testimonials";
 
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 import IptvContext from "../context/Iptv";
 import React, { useEffect, useContext } from "react";
 import Contact from "../contact/Contact";

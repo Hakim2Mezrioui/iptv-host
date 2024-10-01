@@ -1,4 +1,3 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
 import classes from "./Card.module.css";
 
 const Card = (props) => {

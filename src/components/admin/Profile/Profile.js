@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useReducer, useRef } from "react";
+import React, { useReducer, useRef } from "react";
 import classes from "./Profile.module.css";
-import IptvContext from "../../context/Iptv";
 import Swal from "sweetalert2";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 function checkValidationHandler(state, action) {
     if(action.type === "username") {

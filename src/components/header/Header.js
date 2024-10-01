@@ -7,11 +7,11 @@ import { useCallback, useContext, useState } from "react";
 import IptvContext from "../context/Iptv";
 
 const Header = () => {
-    const [activeItem, setActiveItem] = useState("home");
+    // const [activeItem, setActiveItem] = useState("home");
 
-    const onSetActiveItem = (itemName) => {
-        setActiveItem(itemName)
-    }
+    // const onSetActiveItem = (itemName) => {
+    //     setActiveItem(itemName)
+    // }
 
     const ctx = useContext(IptvContext);
 
