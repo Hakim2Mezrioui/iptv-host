@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iptv-host/static/css/main.e891cdf0.css",
-    "main.js": "/iptv-host/static/js/main.9bd437de.js",
+    "main.js": "/iptv-host/static/js/main.c567d74f.js",
     "static/js/787.a0afb5c9.chunk.js": "/iptv-host/static/js/787.a0afb5c9.chunk.js",
     "static/media/introFoot.mp4": "/iptv-host/static/media/introFoot.f4f04b2bf12abc3c3758.mp4",
     "static/media/watch3.jpg": "/iptv-host/static/media/watch3.091180084d64ad944545.jpg",
@@ -30,11 +30,11 @@
     "index.html": "/iptv-host/index.html",
     "static/media/slick.woff": "/iptv-host/static/media/slick.295183786cd8a1389865.woff",
     "main.e891cdf0.css.map": "/iptv-host/static/css/main.e891cdf0.css.map",
-    "main.9bd437de.js.map": "/iptv-host/static/js/main.9bd437de.js.map",
+    "main.c567d74f.js.map": "/iptv-host/static/js/main.c567d74f.js.map",
     "787.a0afb5c9.chunk.js.map": "/iptv-host/static/js/787.a0afb5c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e891cdf0.css",
-    "static/js/main.9bd437de.js"
+    "static/js/main.c567d74f.js"
   ]
 }
